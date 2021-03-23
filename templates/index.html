@@ -1,0 +1,37 @@
+{% load static %}
+<html>
+    <head>
+        <title>hello</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    </head>
+<body>
+    
+<div id="container">
+    <div class="login-box">
+        <h2>Multiple Linear Regression</h2>
+        <form action="calculate">
+            <div class="user-box">
+                <input type="text" name="exp1" required="">
+                <label>AREA  </label>
+               
+            </div>
+            <div class="user-box">
+                <input type="text" name="exp2" required="">
+                <label>FLOOR </label>
+               
+            </div>
+            <div class="user-box">
+                <input type="text" name="exp3" required="">
+                <label>ROOM </label>
+        
+            </div>
+            <input type="submit" name="submit" value="predict" class="submitbtn" />
+        </form><br>
+        <h2>PRICE : {{predicted}}</h2>
+    </div>
+
+	<div id="logo">
+			</div>
+	<div id="continput">
+            </body>
+</html>
