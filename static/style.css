@@ -1,37 +1,42 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
-
+html {
+  height: 100%;
+}
 body {
-	background: linear-gradient(to left,tomato 0%,#00c7ff 100%);
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url("https://cdn.wallpapersafari.com/41/13/reGdZW.jpg");
+  background-repeat: no-repeat;
+  background-size: 1500px 800px;
 }
 
-#container {
-	width: 400px;
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
   padding: 40px;
-	height: 600px;
-	border-radius: 20px;
-	overflow: hidden;
-	margin: auto;
-	position: absolute;
-	border-top: 4px solid tomato;
-	border-bottom: 4px solid tomato;
-	background: black;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
-	top:calc(50% - 300px);
-	left:calc(50% - 175px);
-
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
 }
 
-.user-box{
-  padding-bottom: 10%;
+.login-box h1 {
+  margin: 0 0 30px;
+  padding: 0;
+  color:rgb(41, 199, 41);
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
 .login-box h2 {
   margin: 0 0 30px;
   padding: 0;
-  color: tomato;
+  color:rgb(10, 184, 253);
   text-align: center;
-  display: block;
 }
 
 .login-box .user-box {
@@ -175,11 +180,11 @@ body {
 }
 
 .submitbtn {
-  background: linear-gradient(tomato, rgb(131, 94, 88));
+  background: linear-gradient(#141e30, #243b55);
   border: 2px solid #03e9f4;
   width: 100px;
   height: 35px;
-  color: rgba(18, 215, 230, 0.938);
+  color: white;
   font-size: 18px;
   border-radius: 10px;
   margin: 0;

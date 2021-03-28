@@ -29,7 +29,7 @@ def predict(request):
     accuracy = model.score(X_test, y_test)
     accuracy = accuracy*100
     accuracy = int(accuracy)
-    return render(request,'index.html',{"predicted":y_pred})
+    return render(request,'index.html',{"predicted":int(y_pred[0]),"exp1":exp1,"exp2":exp2,"exp3":exp3})
 
 
 
